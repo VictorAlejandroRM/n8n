@@ -1,1 +1,24 @@
 uwu
+# n8n en GitHub Codespaces con ngrok
+
+Este repositorio contiene un script para iniciar n8n con persistencia y exponerlo públicamente usando ngrok, para poder recibir webhooks externos fácilmente.
+
+---
+
+## Requisitos
+
+- GitHub Codespaces
+- Docker instalado (viene por defecto en Codespaces)
+- Node.js y npm instalados (viene por defecto en Codespaces)
+- Cuenta gratuita de ngrok y authtoken (puedes obtenerlo en [ngrok.com](https://ngrok.com))
+
+---
+
+## Configuración inicial
+
+1. Obtén tu authtoken de ngrok en [https://dashboard.ngrok.com/get-started/your-authtoken](https://dashboard.ngrok.com/get-started/your-authtoken)
+
+2. Abre el archivo `start-n8n-ngrok.sh` y reemplaza la línea:
+
+```bash
+NGROK_TOKEN="TU_AUTHTOKEN_AQUI"

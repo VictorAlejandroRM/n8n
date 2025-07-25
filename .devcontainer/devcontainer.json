@@ -1,0 +1,7 @@
+{
+  "name": "n8n devcontainer",
+  "image": "node:18-bullseye",
+  "postStartCommand": "./start-n8n-ngrok.sh",
+  "forwardPorts": [5678],
+  "remoteUser": "node"
+}
